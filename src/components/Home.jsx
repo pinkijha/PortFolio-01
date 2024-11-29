@@ -55,16 +55,18 @@ const Home = () => {
                 <h1 className="text-sm md:text-lg">Available on </h1>
                 <ul className="flex text-lg md:text-2xl space-x-5">
                   <li>
-                    {" "}
+                    <a href="https://www.linkedin.com/in/pinkijha/" target="_blank">
                     <FaLinkedin className="cursor-pointer" />
+                    </a>
                   </li>
                   <li>
-                    {" "}
+                    <a href="https://github.com/pinkijha" target="_blank">
                     <FaGithub className="cursor-pointer" />
+                    </a>
                   </li>
                   <li>
-                    {" "}
-                    <SiGmail className="cursor-pointer" />
+                    <a href="https://mail.google.com/" target="_blank">
+                    <SiGmail className="cursor-pointer" /></a>
                   </li>
                 </ul>
               </div>
@@ -73,11 +75,11 @@ const Home = () => {
                 <h1 className=" text-sm md:text-lg">Currently Working on </h1>
 
                 <div className="flex text-lg md:text-2xl space-x-5">
-                  <FaReact className="cursor-pointer " />
-                  <FaHtml5 className="cursor-pointer" />
-                  <SiCss3 className="cursor-pointer" />
-                  <FaNodeJs className="cursor-pointer"  />
-                  <IoLogoJavascript className="cursor-pointer"  />
+                  <FaReact className=" hover:scale-150 duration-200 " />
+                  <FaHtml5 className=" hover:scale-150 duration-200 " />
+                  <SiCss3 className=" hover:scale-150 duration-200" />
+                  <FaNodeJs className=" hover:scale-150 duration-200"  />
+                  <IoLogoJavascript className=" hover:scale-150 duration-200"  />
                 </div>
                
               </div>
