@@ -1,12 +1,12 @@
 import React from 'react';
 import react from '/react.png'
-import js from '/js.png';
+import js from '/js1.png';
 import css from '/css.png';
-import html from '/html.png';
+import html from '/html1.png';
 import angular from '/angular.png';
 import boot from '/bootstrap.png';
 import tailwind from '/tailwind.png';
-import node from '/node.png'
+import node from '/node.jpg'
 
 const Portfolio = () => {
     const cardItem = [
@@ -66,9 +66,9 @@ const Portfolio = () => {
                         <p className='px-2 text-gray-700'>Lorem ipsum, , quo voluptatum asperiores deleniti quibusdam!</p>
                     </div>
 
-                    <div className='space-x-3 px-6 py-6 justify-around'>
-                        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded'>Video</button>
-                        <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded'>Source Code</button>
+                    <div className='space-x-3 space-y-3 px-6 py-6 justify-around'>
+                        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 py-2 rounded'>Video</button>
+                        <button className='bg-green-500  hover:bg-green-700 text-white font-bold px-2 py-2 rounded'>Source Code</button>
                     </div>
 
                 </div>
