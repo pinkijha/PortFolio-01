@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import photo from '/Passport_size_photo.JPG';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [ showMenu, setShowMenu ] = useState(false);
@@ -56,7 +57,11 @@ const Navbar = () => {
         <ul className='hidden md:flex items-center space-x-8'>
          {
             menuList.map(({id, text}) => {
-               return <li key={id} className=' hover:scale-105 duration-200 cursor-pointer'>{text}</li>
+               return <li key={id} className=' hover:scale-105 duration-200 cursor-pointer'>
+                <Link to={text}
+                smooth={true} duration={500}
+                 offset={-70}
+                 activeClass='active' >{text}</Link></li>
             })
          }
         </ul>
@@ -73,7 +78,11 @@ const Navbar = () => {
         <ul className='md:hidden my-6 h-screen flex flex-col justify-center items-center'>
         {
             menuList.map(({id, text}) => {
-               return <li className={mobileMenu} key={id}>{text}</li>
+               return <li className={mobileMenu} key={id}>
+                <Link  to={text}
+                smooth={true} duration={500}
+                 offset={-70}
+                 activeClass='active' >{text}</Link></li>
             })
          }
         </ul> 
